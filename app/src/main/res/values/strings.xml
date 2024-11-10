@@ -12,4 +12,5 @@
     <string name="menu_slideshow">Whois Lookup</string>
     <string name="menu_ssh">SSH</string>
     <string name="menu_terminal">Terminal</string>
+    <string name="menu_ftp">ftp Server</string>
 </resources>
