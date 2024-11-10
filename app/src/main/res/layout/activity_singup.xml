@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/img"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="280dp">
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:id="@+id/name"
+                android:layout_gravity="center"
+                android:background="@drawable/border_purple"
+                android:padding="8dp"
+                android:hint="Name"
+                android:drawablePadding="8dp"
+                android:drawableLeft="@drawable/baseline_email_24"
+                >
+
+            </EditText>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:id="@+id/email"
+                android:layout_gravity="center"
+                android:background="@drawable/border_purple"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:hint="Email"
+                android:drawablePadding="8dp"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                >
+
+            </EditText>
+
+            <EditText
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:id="@+id/password"
+                android:layout_gravity="center"
+                android:background="@drawable/border_purple"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:drawablePadding="8dp"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                >
+
+            </EditText>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_marginTop="30dp"
+                android:layout_width="300dp"
+                android:layout_gravity="center"
+                android:layout_height="50dp"
+                android:text="singup"
+                android:background="@drawable/border_purple"
+                android:textSize="15sp"
+                app:cornerRadius="30dp"
+                >
+
+            </Button>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/loginRe"
+                android:text="Already an user ? Login Here"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                >
+            </TextView>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
