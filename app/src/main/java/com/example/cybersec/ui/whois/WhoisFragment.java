@@ -1,4 +1,4 @@
-package com.example.cybersec.ui.slideshow;
+package com.example.cybersec.ui.whois;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,22 +10,22 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.cybersec.databinding.FragmentSlideshowBinding;
+import com.example.cybersec.databinding.FragmentWhoisBinding;
 
-public class SlideshowFragment extends Fragment {
+public class WhoisFragment extends Fragment {
 
-    private FragmentSlideshowBinding binding;
+    FragmentWhoisBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        SlideshowViewModel slideshowViewModel =
-                new ViewModelProvider(this).get(SlideshowViewModel.class);
+        WhoisViewModel whoisViewModel =
+                new ViewModelProvider(this).get(WhoisViewModel.class);
 
-        binding = FragmentSlideshowBinding.inflate(inflater, container, false);
+        binding = FragmentWhoisBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textSlideshow;
-        slideshowViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        final TextView textView = binding.textWhois;
+        whoisViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

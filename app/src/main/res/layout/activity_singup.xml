@@ -80,9 +80,10 @@
 
             </Button>
             <TextView
+                android:id="@+id/loginRe"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/loginRe"
+
                 android:text="Already an user ? Login Here"
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"

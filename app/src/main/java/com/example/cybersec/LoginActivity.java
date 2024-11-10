@@ -49,6 +49,9 @@ public class LoginActivity extends AppCompatActivity {
                     Toast.makeText(LoginActivity.this, "Please fill in both fields", Toast.LENGTH_SHORT).show();
                 } else {
                     if (databaseHelper.checkLoginCredentials(email, password)) {
+
+                        Intent intent=new Intent(LoginActivity.this, MainActivity.class);
+                        startActivity(intent);
                         Toast.makeText(LoginActivity.this, "Login successful", Toast.LENGTH_SHORT).show();
                         // Proceed to next activity after successful login
                         // Example: startActivity(new Intent(LoginActivity.this, HomeActivity.class));

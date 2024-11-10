@@ -1,16 +1,16 @@
-package com.example.cybersec.ui.gallery;
+package com.example.cybersec.ui.nmap;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class GalleryViewModel extends ViewModel {
+public class NmapViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
-    public GalleryViewModel() {
+    public NmapViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is gallery fragment");
+        mText.setValue("This is Port Scanner fragment");
     }
 
     public LiveData<String> getText() {
