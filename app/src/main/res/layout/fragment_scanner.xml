@@ -10,7 +10,7 @@
         android:id="@+id/targetIp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter IP Address"
+        android:hint= "Enter IP Address"
         android:inputType="text" />
 
     <EditText
