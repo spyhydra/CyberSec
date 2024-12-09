@@ -13,12 +13,20 @@ public class LoginActivity extends AppCompatActivity {
 
     private EditText editTextEmail, editTextPassword;
     private Button buttonLogin;
-    private TextView singupBtn; // Fixed variable name to 'signupBtn'
+    private TextView singupBtn;
     private DatabaseHelper databaseHelper;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Initialize SessionManager
+
+
+        // Check if user is already logged in
+
+
         setContentView(R.layout.activity_login);
 
         // Initializing views
@@ -37,7 +45,6 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-
         // Handle login logic
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,12 +56,12 @@ public class LoginActivity extends AppCompatActivity {
                     Toast.makeText(LoginActivity.this, "Please fill in both fields", Toast.LENGTH_SHORT).show();
                 } else {
                     if (databaseHelper.checkLoginCredentials(email, password)) {
+                        // Create login session
 
-                        Intent intent=new Intent(LoginActivity.this, MainActivity.class);
+
+                        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                         startActivity(intent);
                         Toast.makeText(LoginActivity.this, "Login successful", Toast.LENGTH_SHORT).show();
-                        // Proceed to next activity after successful login
-                        // Example: startActivity(new Intent(LoginActivity.this, HomeActivity.class));
                         finish();  // Close the login activity
                     } else {
                         Toast.makeText(LoginActivity.this, "Invalid email or password", Toast.LENGTH_SHORT).show();

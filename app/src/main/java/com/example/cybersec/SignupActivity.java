@@ -9,6 +9,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
+
 public class SignupActivity extends AppCompatActivity {
 
     private EditText editTextName, editTextEmail, editTextPassword;
@@ -33,7 +34,7 @@ public class SignupActivity extends AppCompatActivity {
         loginRedirect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(SignupActivity.this,LoginActivity.class);
+                Intent intent=new Intent(SignupActivity.this, LoginActivity.class);
                 startActivity(intent);
             }
         });

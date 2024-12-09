@@ -1,5 +1,4 @@
-package com.example.cybersec.ui.ftpServer;
-
+package com.example.cybersec;
 
 import android.content.Context;
 import android.net.Uri;
