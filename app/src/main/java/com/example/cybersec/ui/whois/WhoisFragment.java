@@ -7,12 +7,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-
 import com.example.cybersec.databinding.FragmentWhoisBinding;
-
 public class WhoisFragment extends Fragment {
 
     private FragmentWhoisBinding binding;
@@ -73,3 +70,4 @@ public class WhoisFragment extends Fragment {
         binding = null;
     }
 }
+

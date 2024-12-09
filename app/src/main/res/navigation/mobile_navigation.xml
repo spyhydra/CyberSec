@@ -5,6 +5,7 @@
     android:id="@+id/mobile_navigation"
     app:startDestination="@+id/nav_home">
 
+
     <fragment
         android:id="@+id/nav_home"
         android:name="com.example.cybersec.ui.home.HomeFragment"
@@ -22,4 +23,9 @@
         android:name="com.example.cybersec.ui.whois.WhoisFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_whois" />
+    <fragment
+        android:id="@+id/nav_ftp"
+        android:name="com.example.cybersec.ui.ftpServer.ftpFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_ftp" />
 </navigation>
