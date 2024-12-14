@@ -22,4 +22,8 @@
     <style name="Theme.CyberSec.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.CyberSec.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="CustomNavigationViewStyle" parent="Widget.MaterialComponents.NavigationView">
+        <item name="android:fontFamily">@font/custom_font</item>
+        <item name="fontFamily">@font/custom_font</item>
+    </style>
 </resources>

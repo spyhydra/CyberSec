@@ -111,8 +111,10 @@ public class ftpUse extends AppCompatActivity {
         if (requestCode == PICK_FOLDER_REQUEST && resultCode == RESULT_OK && data != null) {
             selectedFolderUri = data.getData();
             if (selectedFolderUri != null) {
-                getContentResolver().takePersistableUriPermission(selectedFolderUri,
-                        Intent.FLAG_GRANT_READ_URI_PERMISSION | Intent.FLAG_GRANT_WRITE_URI_PERMISSION);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+                    getContentResolver().takePersistableUriPermission(selectedFolderUri,
+                            Intent.FLAG_GRANT_READ_URI_PERMISSION | Intent.FLAG_GRANT_WRITE_URI_PERMISSION);
+                }
                 Log.d(TAG, "Selected folder URI: " + selectedFolderUri);
                 DocumentFile pickedDir = DocumentFile.fromTreeUri(this, selectedFolderUri);
                 if (pickedDir != null && pickedDir.canRead()) {

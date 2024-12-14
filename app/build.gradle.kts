@@ -61,9 +61,12 @@ android {
 }
 
 dependencies {
-
     implementation ("com.squareup.okhttp3:okhttp:4.9.3" )
     implementation ("androidx.documentfile:documentfile:1.0.1")
+    implementation ("com.google.android.material:material:1.5.0")
+    implementation ("com.google.android.material:material:1.6.0")
+    implementation ("androidx.cardview:cardview:1.0.0")
+    implementation ("androidx.constraintlayout:constraintlayout:2.1.3")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.apacheftpserver)
